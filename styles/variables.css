@@ -1,5 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+    --save-svg-color: #fff;
     --heart-contour: #000;
     --animation-fill-color: transparent;
     --animation-sparks-color: transparent;
