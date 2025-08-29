@@ -21,14 +21,17 @@
                     linear-gradient(to bottom, #e7e7e7, #1a1a1a);          
   background-size: cover;
   background-attachment: fixed;
-  padding: 2px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 .header_box {
   display: flex;
@@ -41,6 +44,7 @@
   margin-block-start: 100px;
   margin-block-end: 100px;
   outline: solid 2px #000;
+  outline-offset: -1px;
   background-color: white;
 }
 .header_title {
@@ -71,14 +75,16 @@ text-transform: uppercase;
   block-size: min-content;
   inline-size: var(--box-width);
   margin-bottom: 52px;
+  outline-offset: -1px;
 
 }
 
 .article_image {
-  inline-size: 100%;
+  inline-size: calc(100% - 2px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .article_image-box {
   position: relative;
@@ -113,7 +119,6 @@ text-transform: uppercase;
   font-size: 18px;
   line-height: 100%;
   font-variation-settings: 'wght' var(--title-font-weigh, 715);
-  inline-size: 100%;
   text-wrap: wrap;
   display: flex;
   flex-direction: column;
@@ -274,6 +279,7 @@ text-transform: uppercase;
   inline-size: 341px;
   block-size: min-content;
   padding: 30px 38px;
+  margin: auto;
 }
 .dialog-info {
   display: flex;
