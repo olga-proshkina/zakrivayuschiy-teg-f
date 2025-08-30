@@ -76,7 +76,7 @@ text-transform: uppercase;
   inline-size: var(--box-width);
   margin-bottom: 52px;
   outline-offset: -1px;
-
+  padding-top: 5px;
 }
 
 .article_image {
@@ -85,14 +85,15 @@ text-transform: uppercase;
   object-fit: cover;
   margin-left: 1px;
   margin-right: 1px;
+  margin-top: 0px;
 }
 .article_image-box {
   position: relative;
 }
 .lable {
   position: absolute;
-  top: 27px;
-  right: 25px;
+  top: 29px;
+  right: 27px;
   text-shadow:
   -1px 0 #fff, 
   0 1px #fff, 
@@ -122,6 +123,7 @@ text-transform: uppercase;
   text-wrap: wrap;
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .article_text {
@@ -129,13 +131,13 @@ text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
   font-weight: 410;
-  margin: 25px;
+  margin: 25px 29px 23px 25px;
 }
 .article_interactive {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-block-end: 25px;
   margin-inline-end: 25px;
 }
@@ -241,6 +243,7 @@ text-transform: uppercase;
 
 .card__like-button {
   outline: solid 2px #000;
+  outline-offset: -1px;
   inline-size: 130px;
   block-size: 38px;
   background-color: #fff ;
@@ -327,6 +330,7 @@ dialog::backdrop {
 @media (width >= 685px) {
 .article_title {
   display: inline;
+  margin-bottom: ;
 }
 }
 
