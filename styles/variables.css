@@ -5,8 +5,8 @@
     --animation-fill-color: transparent;
     --animation-sparks-color: transparent;
     --animation-core-color: transparent;
-    --main-font: Inter-Variable;
-    --accent-font: PressStart2P-Regular;
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P-Regular';
     --title-font-weight: 715;
     --text-font-weight: 410;
     --box-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
