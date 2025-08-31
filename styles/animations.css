@@ -18,11 +18,11 @@
   }
 }
 
- @keyframes sparks {
+@keyframes sparks {
   from {
     --animation-sparks-color: transparent;
   }
   to {
-    --animation-sparks-color: #FF0000;
+    --animation-sparks-color: #ff0000;
   }
- }
+}
