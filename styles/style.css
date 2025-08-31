@@ -345,6 +345,10 @@ dialog::backdrop {
   margin-left: auto;
 }
 
+.button-save {
+  margin-block-end: 100px;
+}
+
 .save-svg {
   mix-blend-mode: difference;
   position: relative;
