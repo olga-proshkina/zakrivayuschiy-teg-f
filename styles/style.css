@@ -82,13 +82,20 @@
   inline-size: calc(100% - 2px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  margin-left: 1px;
-  margin-right: 1px;
-  margin-top: 0px;
+  object-position: center;
+  transform: scale(105%);
+  position: relative;
+  z-index: -1;
+  
 }
+
 .article_image-box {
+  aspect-ratio: 1 / 1;
   position: relative;
   overflow: hidden;
+  outline: solid 2px #000;
+  outline-offset: -1px;
+  z-index: 1;
 }
 
 .article_image_01-01 {
@@ -144,12 +151,9 @@
   margin: 4px 12px;
   font-family: inherit;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 120%;
   font-variation-settings: "wght" var(--title-font-weigh, 715);
-  text-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  display: inline-block;
 }
 
 .article_text {
@@ -300,7 +304,7 @@
 }
 
 .button-save-svg {
-  inline-size: 28px;
+  inline-size: 21px;
   aspect-ratio: 1 / 1;
 }
 .dialog-save {
@@ -353,15 +357,6 @@ dialog::backdrop {
   mix-blend-mode: difference;
   position: relative;
   z-index: 2;
-}
-
-@media (width >= 685px) {
-  .article_title {
-    display: inline;
-  }
-  .article_image {
-    margin-top: 5px;
-  }
 }
 
 @media (width >= 1400px) {
