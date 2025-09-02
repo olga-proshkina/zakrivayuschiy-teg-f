@@ -83,7 +83,6 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
-  transform: scale(105%);
   position: relative;
   z-index: -1;
 }
@@ -237,16 +236,13 @@
   --animation-fill-color: #000;
 }
 
-.like-icon:active {
-  --heart-contour: #000;
-  --animation-fill-color: #ff0000;
-  --animation-core-color: #ff0000;
-}
 .like-icon:active .core {
   transition-delay: 0s;
+  --animation-core-color: #ff0000;
 }
 .like-icon:active .main-body {
   transition-delay: 0.05s;
+  --animation-fill-color: #ff0000;
 }
 .card__icon-button:has(.is-liked) {
   --heart-contour: #ff0000;
@@ -283,7 +279,6 @@
   inline-size: 130px;
   block-size: 38px;
   background-color: #fff;
-  text-transform: uppercase;
 }
 
 .button__text {
